@@ -16,6 +16,10 @@ class BlankFragment : Fragment() {
         return inflater.inflate(R.layout.fragment_blank, container, false)
     }
 
+    override fun getAllowEnterTransitionOverlap(): Boolean {
+        return super.getAllowEnterTransitionOverlap()
+    }
+
     companion object {
         @JvmStatic
         fun newInstance() = BlankFragment()

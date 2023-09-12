@@ -1,5 +1,6 @@
 package com.agavrilyuk.fragment
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -18,6 +19,10 @@ class BlankFragment : Fragment() {
 
     override fun getAllowEnterTransitionOverlap(): Boolean {
         return super.getAllowEnterTransitionOverlap()
+    }
+
+    override fun getContext(): Context? {
+        return super.getContext()
     }
 
     companion object {
